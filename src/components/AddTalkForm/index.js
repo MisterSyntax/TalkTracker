@@ -11,11 +11,20 @@ export default class AddTalkForm extends React.Component{
         }
 
         this.handleChange = this.handleChange.bind(this)
+        this.onSubmitForm = this.onSubmitForm.bind(this)
     }
     handleChange(event, target){
         let newState = {}
         newState[target] = event.target.value
         this.setState(newState)
+    }
+    onSubmitForm(talk){
+        this.props.onAddTalk(talk)
+        this.state={
+            company:"",
+            name:"",
+            notes:""            
+        }
     }
     render(){
         return(
@@ -45,9 +54,10 @@ export default class AddTalkForm extends React.Component{
                     />
                 </div>
 
-                <div className="button" onClick={()=>this.props.onAddTalk(this.state)}>
+                <div className="button" onClick={()=>this.onSubmitForm(this.state)}>
                     Add Contact
                 </div>
+
             </div>
         )
     }

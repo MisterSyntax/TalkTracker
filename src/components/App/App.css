@@ -3,6 +3,24 @@
 
 /**use global variables like below**/
 body{
-    color: var(--primary-color);
+    color: var(--primary);
+    background-color: var(--primary);
     font-family: "Helvetica";
+    font-weight: 500;
+}
+.bolder{
+    font-weight: 700;
+}
+.button{
+    cursor: pointer;
+    padding: .3em 0;
+    border: 3px solid var(--third);
+    background-color: var(--third);
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 700;
+    width: 200px;
+    &:hover{
+        border-color: var(--primary);
+    }
 }

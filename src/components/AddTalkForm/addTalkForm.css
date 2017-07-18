@@ -1,0 +1,14 @@
+@import url('../../cssGlobals/colors.css');
+#add-talk-form{
+    margin: .5em;
+    padding: .5em;
+    border: 3px solid var(--third);
+    border-radius: 5px;
+    background-color: var(--bg);
+    fill: .5;
+}
+
+.entry .bolder{
+    width: 150px;
+    display: block;
+}

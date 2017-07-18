@@ -1,5 +1,9 @@
 /**Can define global colors to import into components**/
 :root {
-  /**also used for flyouts**/
-  --primary-color: #D99006;
+  --bg: #FDFFFC;
+
+  --primary: #011627;
+  --secondary: #E71D36;
+  --third: #2EC4B6;
+  --fourth: #FF9F1C;
 }

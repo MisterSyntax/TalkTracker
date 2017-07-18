@@ -5,32 +5,27 @@
 import React from 'react'
 
 //import your component
-import Home from '../../components/Home/'
+import AddTalkForm from '../../components/AddTalkForm/'
 
 import { connect } from 'react-redux'
 
 //import whatever action you need to update your state
-import { enableContent, disableContent } from '../../actions'
+import { addTalk } from '../../actions'
 
 const mapStateToProps = (state, props) => (
     {
-        enable: state.enable
+        allTalks: state.allTalks
     }
 )
 
 const mapDispatchToProps = dispatch => {
-    return{
-        onEnableContent(){
+    return {
+        onAddTalk(talk) {
             dispatch(
-                enableContent()
-            )
-        },
-        onDisableContent(){
-            dispatch(
-                disableContent()
+                addTalk(talk)
             )
         }
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(AddTalkForm)

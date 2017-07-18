@@ -4,8 +4,8 @@
  */
 
 const constants = {
-    ENABLE: 'ENABLE',
-    DISABLE: 'DISABLE'
+    ADD_TALK: 'ADD_TALK',
+    REMOVE_TALK: 'REMOVE_TALK'
 }
 
 export default constants;

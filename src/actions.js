@@ -8,14 +8,21 @@
  */
 import C from "./constants"
 
-export const enableContent = () => {
+export const addTalk = talk => {
+    let date = new Date()
+    let id = date.getTime()
+    talk.id = id
+    talk.date = date
     return {
-        type: C.ENABLE
+        type: C.ADD_TALK,
+        payload: talk
     }
+
 }
 
-export const disableContent = () => {
+export const removeTalk = (id) => {
     return {
-        type: C.DISABLE
+        type: C.REMOVE_TALK,
+        payload: id
     }
 }

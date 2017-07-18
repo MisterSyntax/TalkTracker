@@ -1,3 +1,18 @@
 {
-    "enable" : false
+    "allTalks": [
+        {
+            "company": "Some Company",
+            "name": "John Smith",
+            "notes": "Good Guy",
+            "date": "07-18-2017",
+            "id": "110011"
+        },
+        {
+            "company": "Some Other Company",
+            "name": "John Guns",
+            "notes": "Bad Guy",
+            "date": "07-18-2017",
+            "id": "110021"
+        }
+    ]
 }

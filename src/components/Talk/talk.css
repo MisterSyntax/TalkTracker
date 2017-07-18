@@ -1,0 +1,13 @@
+@import url('../../cssGlobals/colors.css');
+
+.talk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5em;
+    padding: .5em;
+    border: 3px solid var(--bg);
+    border-radius: 5px;
+    background-color: var(--fourth);
+    fill: .5;
+}
